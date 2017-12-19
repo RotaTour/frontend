@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>RotaTour</title>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+
+</head>
+<body style="background-color: #f7f7f7">
+
+	
+
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #E12929;">
+
+  	<div style="margin-right: 20px">
+    		<a href="#" >
+    			 <img src="img/Logo.png" width="53" height="39" alt="" align="right">
+   		</a>
+   	</div>
+  
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+    <!--  <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+     -->
+
+
+      
+   	    <li class="nav-item">
+          <a class="nav-link" href="#">Timeline</a>
+       </li>
+        <li class="nav-item">
+         <a class="nav-link" href="amigos.html">Amigos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Locais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Rotas</a>
+        </li>
+
+
+
+
+
+
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <img src="img/avatar.jpeg" class="navpic">
+          User
+          </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="update.html"> <i class="fa fa-pencil" aria-hidden="true"></i> Atualizar perfil</a>
+             <a class="dropdown-item" href="#"> <i class="fa fa-power-off" aria-hidden="true"></i> Sair</a>
+          
+        </li>
+    <!--  <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+     </ul>
+     <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Encontre pessoas" aria-label="Search">
+        <button class="btn btn-default my-2 my-sm-0" type="submit">Pesquisar</button>
+     </form>
+    </div>
+  </nav>
+
+
+
+  <div class="updateform" style="width: 30%;">
+  		
+  		<div style="padding: 20px; opacity: 0.6; text-decoration: none;">
+  			<a href="amigos.html" style="color: #000" onmouseover="this.style.text-decoration= 'underline'"><h3> Amigos </h3></a>
+  		</div>
+
+  		<div class="tab">
+  			<button class="tablinks" onclick="openCity(event, 'Amigos')" id="defaultOpen">Seus Amigos</button>
+  			<button class="tablinks" onclick="openCity(event, 'Solicitações')">Solicitações de Amizade</button>
+  			
+		</div>
+
+		<div id="Amigos" class="tabcontent">
+ 			 
+  			<p>Você ainda não possui amigos</p>
+		</div>
+
+		<div id="Solicitações" class="tabcontent">
+  			
+  			<p>Sem novas solicitações</p> 
+		</div>
+
+
+
+  </div>
+
+
+
+  <script>
+	function openCity(evt, option) {
+   		 var i, tabcontent, tablinks;
+  		  tabcontent = document.getElementsByClassName("tabcontent");
+
+   
+  		  for (i = 0; i < tabcontent.length; i++) {
+    	    tabcontent[i].style.display = "none";
+    		}
+
+   
+  		  tablinks = document.getElementsByClassName("tablinks");
+  		  for (i = 0; i < tablinks.length; i++) {
+       		 tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		  }
+   		 document.getElementById(option).style.display = "block";
+   		 evt.currentTarget.className += " active";
+	}
+
+	document.getElementById("defaultOpen").click();
+
+</script>
+
+
+
+</body>
+</html>

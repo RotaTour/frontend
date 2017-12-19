@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RotaTour</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src = "js/module.js"></script>
+	<script src = "js/controller.js"></script>
+
+
+
+
+</head>
+<body style="background-image: url(img/baack.jpg);">
+	<div class="container">
+		<form>
+			<div class="jumbotron" style="width: 80%; margin:auto;padding: 30px">	
+	
+				<div align="center" style="margin-bottom: 8px;">
+					<img src="img/Logo.png" height="107px" width="144px">
+					<h1> Cadastre-se</h1>
+				</div>
+
+				
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label><STRONG>Nome</STRONG></label> 
+							<div class="input-group">
+				  			<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+							  <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+						</div>
+					</div>
+					
+
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label><STRONG>Email</STRONG></label> 
+							<div class="input-group">
+				  			<span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+							  <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+						</div>
+					</div>
+				
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label><STRONG>Senha</STRONG></label> 
+							<div class="input-group">
+				  			<span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+							  <input type="password" class="form-control" placeholder="senha" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+						</div>
+					</div>
+
+					<div class="col-xs-12">
+						<div class="form-group">
+							<label><STRONG>Confirmar Senha</STRONG></label> 
+							<div class="input-group">
+				  			<span class="input-group-addon" id="basic-addon1"><i class="fa fa-lock"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+							  <input type="password" class="form-control" placeholder="confirmar senha" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+						</div>
+					</div>
+
+					<div class="col-xs-12" style="margin-top: 8px;">
+						<button type="submit" class="btn btn-success btn-block " >
+						Cadastrar
+						</button>
+					</div>
+
+			</div>	
+		</form>
+	</div>
+
+
+</body>
+</html>

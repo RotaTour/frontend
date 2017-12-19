@@ -1,0 +1,39 @@
+html{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.loginbox{
+
+    margin: 50px auto;
+    width: 320px;
+
+}
+
+.imgcontainer {
+    
+    margin: 24px 0 12px 0;
+}
+
+.inputs{
+
+    margin: 8px;
+}
+
+.navbar-custom{
+
+    background-color:  #1e88e5;
+    
+
+}
+
+nav div ul li{
+
+    margin-right: 20px;
+
+
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app = "RotaTour">
+<head >
+	<title> RotaTour</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src = "js/module.js"></script>
+	<script src = "js/controller.js"></script>
+
+
+</head>
+<body ng-controller="RotaTourController" style="background-image: url(img/baack.jpg);">
+
+	<div class="container">
+	<form>
+	<div class="jumbotron loginbox">
+
+				<h1 style="text-align: center;"> Bem Vindo!</h1>
+
+			
+				<div align="center" style="margin-bottom: 8px;">
+					<img src="img/Logo.png" height="107px" width="144px">
+				</div>
+				
+				<div class="form-group">
+				
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+				  <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+				</div>
+
+				<div class="input-group" style="margin-top: 8px">
+				  <span class="input-group-addon" id="basic-addon1"><i class= "fa fa-lock" aria-hidden="true"></i></span>
+				  <!--input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1"-->
+				  <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon1" required minlength="3" maxlength="50">
+				</div>
+
+				<div class="col-xs-12" style="margin-top: 8px;">
+				<button type="submit" class="btn btn-primary " style="width: 49%;">
+				Entrar
+				</button>
+				<button type="submit" ng-click= "clickToRedirect()" class="btn btn-primary " style="width: 49%;" >
+				Cadastre-se
+				</button>
+
+				<div style="margin-top: 5px">
+					<button type="submit" class="btn btn-link" >
+						Esqueceu a senha?
+					</button>
+					
+				</div>
+
+
+				<hr>
+
+				<div style="text-align: center; opacity: 0.5">
+					<p> Entrar com </p>
+				</div>
+
+				<div style="text-align: center">
+
+					<a href="#"><i class="fa fa-facebook-official" style="font-size:30px;color:#3b5998; margin-right: 9px" onmouseover="this.style.color='#8b9dc3'" onmouseout="this.style.color= '#3b5998'"></i></a>
+					<a href="#"><i class="fa fa-google" style="font-size:30px; color: #4285f4; margin-right: 9px" onmouseover="this.style.color='#8cb5f8'" onmouseout="this.style.color= '#4285f4'"></i></a>
+					<a href="#"><i class="fa fa-github" style="font-size:30px; color: #000" onmouseover="this.style.color='#A9A9A9'" onmouseout="this.style.color= '#000'"></i></a>	
+				</div>
+
+			</form> 
+		
+	</div>
+	</div>
+
+
+</body>
+</html>
